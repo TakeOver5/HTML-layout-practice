@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* flex 預設不會換行，而是自動收縮 */
+        .flex {
+            width: 800px;
+            height: 800px;
+            background: #ccc;
+            display: flex;
+            /* flex-start, center, flex-end */
+            justify-content: center;
+            /* row, column */
+            flex-direction: row;
+            /* 使 flex 換行 */
+            /* flex-wrap: wrap; */
+        }
+        .item {
+            width: 700px;
+            /* 高度不設定的情況下，與父層等高 */
+            /* height: 200px; */
+            background-color: #f00;
+            font-size: 100px;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex">
+        <div class="item">1</div>
+        <div class="item">2</div>
+    </div>
+</body>
+</html>
