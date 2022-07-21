@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <style>
+        * {
+            margin:0;
+            padding:0;
+            list-style: none;
+            font-family: 'Noto Sans TC', sans-serif;
+        }
+
+        .main-header {
+            background: linear-gradient(0deg, #cc4380, #fb6c75);
+            display: flex;
+        }
+
+        .main-header .container {
+            display: flex;
+            padding: 20px;
+            min-width: 1200px;
+            margin: auto;
+            align-items: center;
+            /* 添加該行改變排版 */
+            flex-direction: column;
+        }
+
+        .main-header .logo {
+            width: 100px;
+        }
+        .main-header .logo img {
+            width: 100%;
+            vertical-align: middle;
+        }
+        .main-header .main-nav {
+            margin: auto;
+            display: flex;
+        }
+        .main-header .main-nav a {
+            text-decoration: none;
+            color: #fff;
+            padding: 5px 1em;
+            position: relative;
+            transform: translateY(0px);
+            transition: 0.3s;
+        }
+
+        .main-header .main-nav a:hover {
+            transform: translateY(-10px);
+        }
+
+        .main-header .main-nav a::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            right: 50%;
+            bottom: -5px;
+            height: 0;
+            border-bottom: 1px solid #fff;
+            transition: 0.3s;
+        }
+
+        .main-header .main-nav a:hover::after {
+            left: 0;
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="csscoke-logo.png" alt="Css coke | CSS 可樂">
+            </a>
+            <nav class="main-nav">
+                <a href="">金魚都能懂系列</a>
+                <a href="">暴力網頁入門系列</a>
+                <a href="">CSS可樂系列</a>
+                <a href="">RWD原來醬子系列</a>
+            </nav>
+        </div>
+    </header>
+    
+</body>
+</html>
